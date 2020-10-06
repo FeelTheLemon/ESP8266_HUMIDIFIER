@@ -38,6 +38,8 @@ namespace WEB
 			return "image/jpeg";
 		} else if (filename.endsWith(".ico")) {
 			return "image/x-icon";
+		} else if (filename.endsWith(".svg")) {
+			return "image/svg+xml";
 		} else if (filename.endsWith(".xml")) {
 			return "text/xml";
 		} else if (filename.endsWith(".pdf")) {
@@ -46,6 +48,8 @@ namespace WEB
 			return "application/x-zip";
 		} else if (filename.endsWith(".gz")) {
 			return "application/x-gzip";
+		} else if (filename.endsWith(".config")) {
+			return "text/plain";
 		}
 		return "text/plain";
 	}
